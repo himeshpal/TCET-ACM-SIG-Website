@@ -1,16 +1,16 @@
 import React from "react";
-import "./Contact.css"; // Separate CSS file for styling
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from "react-icons/fa";
+import "./Contact.css"; // Separate CSS file for styling
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contactus">
       <div className="contact-left">
-        <h1 className="text-5xl">Contact Us</h1>
-        <p className="pt-10 text-[1.9rem]">
+        <h1 className="sm:text-5xl">Contact Us</h1>
+        <p className="pt-4 sm:text-[1.9rem] text-[1rem]">
           For any inquiries regarding events and <br />
           activities, please feel free to contact us.
         </p>
@@ -61,16 +61,16 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="social-links">
+        {/* <div className="social-links">
           <i className="fab fa-linkedin"></i>
           <i className="fab fa-instagram"></i>
           <i className="fab fa-twitter"></i>
           <i className="fab fa-facebook"></i>
-        </div>
+        </div> */}
       </div>
 
       <div className="contact-right">
-        <h2>Contact</h2>
+        <h2 className="contactformtitle">Contact</h2>
         <form className="contact-form">
           <div className="form-field">
             <div className="field-item">
