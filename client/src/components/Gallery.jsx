@@ -5,12 +5,19 @@ const Gallery = () => {
   return (
     <div
       style={{
+<<<<<<< HEAD
         backgroundColor: "#C7E8FF",
         width: "100%",
         paddingBottom: "2%", // Reduced bottom padding to decrease gap
       }}
 
       id="gallery"
+=======
+        backgroundColor: "black",
+        width: "100%",
+        paddingBottom: "2%", // Reduced bottom padding to decrease gap
+      }}
+>>>>>>> bfeb7a5 (first commit)
     >
       <h1
         style={{
@@ -18,8 +25,12 @@ const Gallery = () => {
           textAlign: "center",
           color: "black",
           marginTop: "0",
+<<<<<<< HEAD
           marginBottom: "2%",
           fontWeight:'450', // Reduced margin bottom to decrease gap
+=======
+          marginBottom: "2%", // Reduced margin bottom to decrease gap
+>>>>>>> bfeb7a5 (first commit)
         }}
       >
         Gallery
@@ -29,8 +40,13 @@ const Gallery = () => {
       <div
         className="slider"
         style={{
+<<<<<<< HEAD
           "--width": "300px", // Width of images
           "--height": "250px", // Height of images
+=======
+          "--width": "400px", // Width of images
+          "--height": "400px", // Height of images
+>>>>>>> bfeb7a5 (first commit)
           "--quantity": "9",
           marginBottom: "0", // Remove margin between galleries
         }}
@@ -99,8 +115,13 @@ const Gallery = () => {
         className="slider"
         reverse="true" /* This will reverse the animation direction */
         style={{
+<<<<<<< HEAD
           "--width": "300px", // Width of images
           "--height": "300px", // Height of images
+=======
+          "--width": "400px", // Width of images
+          "--height": "400px", // Height of images
+>>>>>>> bfeb7a5 (first commit)
           "--quantity": "9",
           marginTop: "0", // Remove margin between galleries
         }}

@@ -10,9 +10,12 @@ import {
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import Swal from "sweetalert2";
+<<<<<<< HEAD
 // import dotenv from "dotenv";
 // dotenv.config({ path: "./.env" });
 // const port = process.env;
+=======
+>>>>>>> bfeb7a5 (first commit)
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -32,11 +35,19 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Web3Forms access key
+<<<<<<< HEAD
     const web3FormsAccessKey = "Paste_Your_api_Key";
 
     // Google Apps Script web app URL
     const googleScriptURL =
       "Paste_Your_Google_API";
+=======
+    const web3FormsAccessKey = "9d8e0d14-4a89-4d3a-9ea7-b774c6e2e650";
+
+    // Google Apps Script web app URL
+    const googleScriptURL =
+      "https://script.google.com/macros/s/AKfycbxIHHCgpMrcdCAc7BNwP0hnh9p5mcMf1HiKwF5bMsWAXWWWHHsOKp-YpTwGoitYMsVR/exec";
+>>>>>>> bfeb7a5 (first commit)
 
     try {
       // Submit to Web3Forms (for email)
@@ -200,10 +211,15 @@ const Contact = () => {
               onChange={handleChange}
             ></textarea>
           </div>
+<<<<<<< HEAD
           </div>
           <button type="submit" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit"}
             {/* {console.log(port)} */}
+=======
+          <button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? "Submitting..." : "Submit"}
+>>>>>>> bfeb7a5 (first commit)
           </button>
         </form>
       </div>
