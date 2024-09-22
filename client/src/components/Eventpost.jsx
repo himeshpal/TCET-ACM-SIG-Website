@@ -132,7 +132,7 @@ const Eventpost = () => {
     data: events,
     loading,
     error,
-  } = useFetch("http://localhost:8000/events"); // Adjust the URL if needed
+  } = useFetch("http://localhost:8080/events"); // Adjust the URL if needed
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
@@ -143,7 +143,7 @@ const Eventpost = () => {
   };
 
   return (
-    <div className="container mx-auto bg-blue-800 py-12">
+    <div className="container mx-auto bg-blue-800 py-12 ">
       <h1 className="text-white text-center text-7xl font-semibold mb-10 pb-10">
         Events
       </h1>

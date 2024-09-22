@@ -1,0 +1,360 @@
+.two {
+  background-color: black;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  padding: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; /* Adds space between the two sections */
+}
+
+.first_section,
+.second_section {
+  margin-left: 100px;
+}
+
+.faculty,
+.faculty2 {
+  /* margin-left: 50px; */
+  width: 54%;
+  background-color: black;
+  padding-right: 20px;
+  color: white;
+}
+
+.desc1,
+.desc2 {
+  margin-right: 100px;
+}
+
+.container1,
+.container2 {
+  margin-right: 50px;
+  height: 375px;
+  width: 350px;
+  background: linear-gradient(blueviolet, black);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+  margin-right: 50px; /*Space between image and faculty text*/
+}
+
+.image,
+.image2 {
+  height: 200px;
+  width: 200px;
+}
+
+.image img,
+.image2 img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+/* Core members */
+
+.core {
+  background: radial-gradient(circle, #015B97 0%, #1C0773 70%);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.Jtitle {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.Jteam-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.jrole {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: white;
+}
+
+.name {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .Jteam-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.team-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  background-image: linear-gradient(120deg,rgba(255,255,255,0.3),rgba(0,0,0,0.2));
+  background-size: 30px 30px;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  /* z-index: 20; */
+}
+
+.team-member {
+  width: 250px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* border: 20px solid black; */
+}
+
+.member-border{
+  /* border: 2px solid black; */
+  border-radius:20px;
+  /* background-color: black; */
+  background-image:linear-gradient(-75deg,
+  transparent 0,
+  transparent 5%,
+  rgba(255, 255, 255, 0.5) 5%,
+  rgba(255,255,255,0.5) 10%,
+  transparent 10%,
+  transparent 100%);
+  background-size: 300% 100%;
+  /* -webkit-text-fill-color:transparent;
+  -webkit-background-clip:text; */
+   transition: 1.2s; 
+  /* background-image: linear-gradient(black, rgb(76, 76, 157)); */
+}
+
+.container-memeber-border{
+  background: radial-gradient(circle, #015B97 0%, #1C0773 70%);
+  border-radius: 20px;
+  margin-top: 2rem;
+  /* transition: 1.2s; */
+}
+
+.container-memeber-border:hover{
+  background: radial-gradient(circle, rgb(211, 5, 91) 0%, #10014a 70%);
+  
+}
+
+.container4{
+  padding: 0 10px 5px;
+}
+
+.container5{
+  padding: 0 10px 5px;
+}
+
+.container6{
+  padding: 0 17px 5px;
+}
+
+.container7{
+  padding: 0 10px 5px;
+}
+
+.container8{
+  padding: 0 0px 5px;
+}
+
+.container9{
+  padding: 0 10px 10px;
+}
+
+.container10{
+  padding: 0 10px 10px;
+}
+
+.container12{
+  padding: 0 10px 5px;
+}
+
+.container13{
+  padding: 0 10px 5px;
+}
+
+.member-border:hover{
+  background-position: -120% 0;
+  color: white;
+}
+
+.role {
+  font-size: 1.5rem;
+  margin-top: 15px;
+  color: white;
+}
+
+.diya {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.title2 {
+  font-size: 2.9rem;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-top: 12px;
+  color: white;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+}
+
+@media(max-width:640px){
+  .title2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 12px;
+    color: white;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+/* Icons */
+
+.icon-container {
+  display: flex; /* Use flexbox to arrange icons in a row */
+  /* justify-content: center; Center the icons horizontally */
+  gap: 15px; /* Add some space between icons */
+  margin-top: 20px; /* Optional: margin to separate from other elements */
+}
+
+.icon-container svg {
+  font-size: 20px; /* Adjust icon size */
+  color: #fff; /* Set the color for the icons */
+  cursor: pointer; /* Add pointer cursor for interactivity */
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.icon-container svg:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
+
+
+.particles{
+  position: absolute;
+  display: flex;
+  z-index: 2;
+  padding: 0 20px;
+  /* overflow: hidden; */
+
+}
+
+.particles span{
+  position:relative;
+  bottom: 30px;
+  width: 30px;
+  height: 30px;
+  background-color: #4FC3DC;
+  box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #4fc3dc,
+  -100px 0 #4fc3dc99,
+  100px 0 #ff2d7599;
+  margin: 0 4px;
+  border-radius: 50%;
+  animation: particleanimate 300s ease infinite;
+  animation-duration: calc(300s/var(--j));
+  /* z-index:; */
+}
+
+@keyframes particleanimate{
+  0%{
+    transform: translateY(100vh) scale(0) rotate(0deg);
+  }
+  20%{
+    transform: translateY(100vh) scale(1) rotate(0deg);
+  }
+  100%{
+    transform: translateY(-500vh) scale(0.5) rotate(360deg);
+  }
+}
+
+@media(max-width:640px){
+  .particles{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    padding: 0 20px;
+    /* overflow: hidden; */
+  
+  }
+  .particles span{
+    position:relative;
+    bottom: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #4FC3DC;
+    box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #4fc3dc,
+    -100px 0 #4fc3dc99,
+    100px 0 #ff2d7599;
+    margin: 0 3px;
+    border-radius: 50%;
+    animation: particleanimate 300s ease infinite;
+    animation-duration: calc(600s/var(--j));
+    /* z-index:; */
+  }
+  @keyframes particleanimate{
+    0%{
+      transform: translateY(100vh) scale(0) rotate(0deg);
+    }
+    20%{
+      transform: translateY(100vh) scale(1) rotate(0deg);
+    }
+    100%{
+      transform: translateY(-1415vh) scale(0.5) rotate(360deg);
+    }
+  }
+  .particles span:nth-child(even){
+    background-color: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    -100px 0 #4fc3dc99,
+    100px 0 #ff2d7599,
+  }
+}
+
+.particles span:nth-child(even){
+  background-color: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  -100px 0 #4fc3dc99,
+  100px 0 #ff2d7599,
+}
+

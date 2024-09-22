@@ -10,6 +10,9 @@ import {
 } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import Swal from "sweetalert2";
+// import dotenv from "dotenv";
+// dotenv.config({ path: "./.env" });
+// const port = process.env;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,11 +32,10 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Web3Forms access key
-    const web3FormsAccessKey = "9d8e0d14-4a89-4d3a-9ea7-b774c6e2e650";
+    const web3FormsAccessKey = "Paste_Your_api_Key";
 
     // Google Apps Script web app URL
-    const googleScriptURL =
-      "https://script.google.com/macros/s/AKfycbxIHHCgpMrcdCAc7BNwP0hnh9p5mcMf1HiKwF5bMsWAXWWWHHsOKp-YpTwGoitYMsVR/exec";
+    const googleScriptURL = "Paste_Your_Google_API";
 
     try {
       // Submit to Web3Forms (for email)
@@ -92,8 +94,8 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact-left">
-        <h1 className="text-5xl">Contact Us</h1>
-        <p className="pt-10 text-[1.9rem]">
+        <h1 className="text-2xl sm:text-5xl">Contact Us</h1>
+        <p className="pt-2 sm:pt-10 text-[1.1rem] sm:text-[1.9rem] mb-2">
           For any inquiries regarding events and <br />
           activities, please feel free to contact us.
         </p>
@@ -185,20 +187,22 @@ const Contact = () => {
                 onChange={handleChange}
               />
             </div>
-          </div>
-          <div className="field-item">
-            <label htmlFor="message">Message</label>
-            <textarea
-              placeholder="Your message..."
-              name="message"
-              id="message"
-              required
-              value={formData.message}
-              onChange={handleChange}
-            ></textarea>
+
+            <div className="field-item grow">
+              <label htmlFor="message">Message</label>
+              <textarea
+                placeholder="Your message..."
+                name="message"
+                id="message"
+                required
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+            </div>
           </div>
           <button type="submit" disabled={isSubmitting}>
             {isSubmitting ? "Submitting..." : "Submit"}
+            {/* {console.log(port)} */}
           </button>
         </form>
       </div>
